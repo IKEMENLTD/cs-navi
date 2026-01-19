@@ -1210,35 +1210,35 @@ img {
 
   /* 見出し */
   .article-content h2 {
-    font-size: 18px;
-    margin: 32px 0 14px;
-    padding-bottom: 8px;
+    font-size: 16px;
+    margin: 28px 0 12px;
+    padding-bottom: 6px;
     border-bottom-width: 2px;
   }
 
   .article-content h3 {
-    font-size: 16px;
-    margin: 24px 0 10px;
-    padding-left: 10px;
+    font-size: 15px;
+    margin: 22px 0 8px;
+    padding-left: 8px;
     border-left-width: 3px;
   }
 
   .article-content h4 {
-    font-size: 15px;
-    margin: 20px 0 8px;
+    font-size: 14px;
+    margin: 18px 0 6px;
   }
 
   /* 段落・テキスト */
   .article-content p {
-    font-size: 15px;
-    line-height: 1.8;
-    margin: 14px 0;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 12px 0;
   }
 
   /* リード文のはみ出し解除 */
   .article-content > p:first-of-type {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.75;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -1248,14 +1248,14 @@ img {
   /* リスト */
   .article-content ul,
   .article-content ol {
-    margin: 14px 0;
-    padding-left: 18px;
+    margin: 12px 0;
+    padding-left: 16px;
   }
 
   .article-content li {
-    font-size: 15px;
-    margin: 6px 0;
-    line-height: 1.7;
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.65;
   }
 
   /* 引用 */
@@ -1305,51 +1305,52 @@ img {
   .point-box,
   .warning-box,
   .memo-box {
-    padding: 12px 14px;
-    margin: 16px 0;
+    padding: 10px 12px;
+    margin: 14px 0;
     border-radius: 0 6px 6px 0;
   }
 
   .point-box p,
   .warning-box p,
   .memo-box p {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 13px;
+    line-height: 1.65;
   }
 
   /* Q&Aボックス */
   .qa-box {
-    margin: 16px 0;
+    margin: 14px 0;
   }
 
   .qa-question,
   .qa-answer {
-    padding: 12px 14px;
-    font-size: 14px;
+    padding: 10px 12px;
+    font-size: 13px;
+    gap: 8px;
   }
 
   .qa-label {
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
   }
 
   /* チェックリスト・ステップリスト */
   .check-list li,
   .step-list li {
-    font-size: 14px;
-    padding-left: 24px;
-    margin-bottom: 8px;
+    font-size: 13px;
+    padding-left: 22px;
+    margin-bottom: 6px;
   }
 
   .step-list li {
-    padding-left: 40px;
+    padding-left: 36px;
   }
 
   .step-list li::before {
-    width: 26px;
-    height: 26px;
-    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
   }
 
   /* CTAセクション */

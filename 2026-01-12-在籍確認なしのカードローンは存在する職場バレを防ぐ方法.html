@@ -3005,12 +3005,12 @@
 
     // Mobile Navigation Toggle (Hamburger Menu)
     const hamburgerBtn = document.querySelector('.hamburger-btn');
-    const navMobile = document.querySelector('.site-nav-mobile');
+    const navMobile = document.querySelector('.site-nav');
     if (hamburgerBtn && navMobile) {
       hamburgerBtn.addEventListener('click', function() {
         const isOpen = navMobile.classList.toggle('active');
         hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        hamburgerBtn.classList.toggle('is-active', isOpen);
+        hamburgerBtn.classList.toggle('active', isOpen);
         document.body.style.overflow = isOpen ? 'hidden' : '';
       });
 
@@ -3018,7 +3018,7 @@
         if (!hamburgerBtn.contains(e.target) && !navMobile.contains(e.target)) {
           navMobile.classList.remove('active');
           hamburgerBtn.setAttribute('aria-expanded', 'false');
-          hamburgerBtn.classList.remove('is-active');
+          hamburgerBtn.classList.remove('active');
           document.body.style.overflow = '';
         }
       });
@@ -3027,7 +3027,7 @@
         link.addEventListener('click', function() {
           navMobile.classList.remove('active');
           hamburgerBtn.setAttribute('aria-expanded', 'false');
-          hamburgerBtn.classList.remove('is-active');
+          hamburgerBtn.classList.remove('active');
           document.body.style.overflow = '';
         });
       });
@@ -3036,7 +3036,7 @@
         if (e.key === 'Escape' && navMobile.classList.contains('active')) {
           navMobile.classList.remove('active');
           hamburgerBtn.setAttribute('aria-expanded', 'false');
-          hamburgerBtn.classList.remove('is-active');
+          hamburgerBtn.classList.remove('active');
           document.body.style.overflow = '';
         }
       });
