@@ -43,7 +43,7 @@
 
       <nav class="site-nav" id="siteNav">
         <a href="./index.html" class="nav-link active" data-section="home">ホーム</a>
-        <a href="#ranking" class="nav-link" data-section="ranking">ランキング</a>
+        <a href="#ranking" class="nav-link" data-section="ranking">保証会社一覧</a>
         <a href="#articles" class="nav-link" data-section="articles">記事一覧</a>
         <a href="./glossary.html" class="nav-link" data-section="glossary">用語集</a>
         <a href="./faq.html" class="nav-link" data-section="faq">FAQ</a>
@@ -67,26 +67,14 @@
 
     <div class="hero-content">
       <h1 class="hero-title">
-        借りる前の不安を、<br>借りた後の安心に
+        保証会社一覧
       </h1>
-      <p class="hero-subtitle">
-        カードローンに関する正確で信頼できる情報を、<br>分かりやすくお届けします
-      </p>
-      <a href="#articles" class="hero-cta">
-        記事を読む
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
     </div>
   </section>
 
   <!-- Ranking Section -->
   <section class="ranking-section" id="ranking">
     <div class="container">
-      <h2 class="section-title">人気カードローンランキング</h2>
       <div class="ranking-grid" id="rankingGrid">
         <!-- ランキングはJavaScriptで生成 -->
       </div>
@@ -284,6 +272,54 @@
     // ========================================
     function renderRanking() {
       const rankingData = [
+        {
+          name: '三井住友カード カードローン',
+          url: 'https://www.smbc-card.com/nyukai/loan/index.jsp',
+          logo: './assets/images/logos/smbc.jpg',
+          catchcopy: '最短5分の即時発行！',
+          rating: 4.6,
+          rate: '1.5%〜15.0%',
+          limit: '最大900万円',
+          speed: '最短5分',
+          noInterest: 'ポイント付与',
+          features: ['Vポイント貯まる', '振込手数料無料', 'Web完結']
+        },
+        {
+          name: '三菱UFJ銀行カードローン バンクイック',
+          url: 'https://www.bk.mufg.jp/kariru/banquic/index.html',
+          logo: './assets/images/logos/mufg.png',
+          catchcopy: '銀行ならではの安心感と低金利',
+          rating: 4.5,
+          rate: '1.4%〜14.6%',
+          limit: '最大800万円',
+          speed: '最短翌営業日',
+          noInterest: 'なし',
+          features: ['ATM手数料無料', 'Web完結', '口座なしでもOK']
+        },
+        {
+          name: 'みずほ銀行カードローン',
+          url: 'https://www.mizuhobank.co.jp/retail/products/loan/card/index.html',
+          logo: './assets/images/logos/mizuho.jpg',
+          catchcopy: 'WEBで完結、24時間申込OK',
+          rating: 4.4,
+          rate: '2.0%〜14.0%',
+          limit: '最大800万円',
+          speed: '最短当日審査',
+          noInterest: 'なし',
+          features: ['低金利', 'キャッシュカード兼用', '自動融資機能']
+        },
+        {
+          name: 'レイク',
+          url: 'https://lakealsa.com/',
+          logo: './assets/images/logos/lake.jpg',
+          catchcopy: 'Web申込みで選べる無利息',
+          rating: 4.5,
+          rate: '4.5%〜18.0%',
+          limit: '最大500万円',
+          speed: 'Webで最短15分',
+          noInterest: '選べる無利息',
+          features: ['カードレス', 'Web完結', '選べる無利息']
+        },
         {
           name: 'SMBCモビット',
           url: 'https://ac.orkaasp.com/317fRd506a2L294L/cl/?bId=ffb92256',
@@ -676,7 +712,8 @@
 
   <!-- トップへ戻るボタン -->
   <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
