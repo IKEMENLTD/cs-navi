@@ -4,291 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://ikemenltd.github.io/Guarantee-clearguide/faq.html">
+  <link rel="canonical" href="https://example.github.io/site-a/faq.html">
   <meta name="description" content="カードローンに関するよくある質問と回答。審査、在籍確認、返済、金利など、初めての方が気になる疑問を分かりやすく解説します。">
   <meta name="robots" content="index, follow">
 
-  <title>よくある質問（FAQ） | ギャランティークリアガイド</title>
+  <title>よくある質問（FAQ） | クリアセレクトナビ</title>
 
-  <link rel="stylesheet" href="./assets/css/premium-style.css">
+  <link rel="stylesheet" href="./assets/css/neo-style.css">
 
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💳</text></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
 
-  <style>
-    .faq-hero {
-      background: var(--gradient-primary);
-      padding: var(--space-3xl) 0;
-      text-align: center;
-      color: white;
-    }
 
-    .faq-hero h1 {
-      font-family: var(--font-display);
-      font-size: var(--font-size-4xl);
-      font-weight: var(--font-weight-bold);
-      margin-bottom: var(--space-md);
-    }
-
-    .faq-hero p {
-      font-size: var(--font-size-lg);
-      opacity: 0.9;
-    }
-
-    .faq-nav {
-      background: var(--bg-alt);
-      padding: var(--space-lg) 0;
-      position: sticky;
-      top: 72px;
-      z-index: 100;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .faq-nav-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: var(--space-sm);
-    }
-
-    .faq-nav a {
-      padding: var(--space-sm) var(--space-md);
-      background: var(--bg);
-      border-radius: var(--radius-full);
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-medium);
-      color: var(--text);
-      text-decoration: none;
-      border: 1px solid var(--border);
-      transition: all var(--transition-fast);
-    }
-
-    .faq-nav a:hover {
-      background: var(--primary);
-      color: white;
-      border-color: var(--primary);
-    }
-
-    .faq-content {
-      padding: var(--space-3xl) 0;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .faq-section {
-      margin-bottom: var(--space-3xl);
-    }
-
-    .faq-section-title {
-      font-family: var(--font-display);
-      font-size: var(--font-size-2xl);
-      font-weight: var(--font-weight-bold);
-      color: var(--primary);
-      padding-bottom: var(--space-md);
-      border-bottom: 3px solid var(--primary);
-      margin-bottom: var(--space-xl);
-      display: flex;
-      align-items: center;
-      gap: var(--space-md);
-    }
-
-    .faq-section-title svg {
-      width: 28px;
-      height: 28px;
-    }
-
-    .faq-item {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      margin-bottom: var(--space-md);
-      overflow: hidden;
-      transition: all var(--transition-base);
-    }
-
-    .faq-item:hover {
-      border-color: var(--primary-light);
-      box-shadow: var(--shadow-md);
-    }
-
-    .faq-question {
-      width: 100%;
-      padding: var(--space-lg) var(--space-xl);
-      background: none;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--space-md);
-      text-align: left;
-      font-family: var(--font-display);
-      font-size: var(--font-size-lg);
-      font-weight: var(--font-weight-semibold);
-      color: var(--text);
-      transition: all var(--transition-fast);
-    }
-
-    .faq-question:hover {
-      color: var(--primary);
-    }
-
-    .faq-question::before {
-      content: 'Q';
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      background: var(--gradient-primary);
-      color: white;
-      border-radius: var(--radius-full);
-      font-size: var(--font-size-sm);
-      font-weight: var(--font-weight-bold);
-      flex-shrink: 0;
-    }
-
-    .faq-question-text {
-      flex: 1;
-    }
-
-    .faq-toggle {
-      width: 24px;
-      height: 24px;
-      color: var(--text-lighter);
-      transition: transform var(--transition-fast);
-      flex-shrink: 0;
-    }
-
-    .faq-item.active .faq-toggle {
-      transform: rotate(180deg);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 500px;
-    }
-
-    .faq-answer-inner {
-      padding: 0 var(--space-xl) var(--space-xl);
-      padding-left: calc(var(--space-xl) + 32px + var(--space-md));
-    }
-
-    .faq-answer-inner p {
-      color: var(--text-light);
-      line-height: var(--line-height-relaxed);
-      margin-bottom: var(--space-md);
-    }
-
-    .faq-answer-inner p:last-child {
-      margin-bottom: 0;
-    }
-
-    .faq-answer-inner strong {
-      color: var(--text);
-    }
-
-    .faq-answer-inner ul {
-      margin: var(--space-md) 0;
-      padding-left: var(--space-xl);
-    }
-
-    .faq-answer-inner li {
-      color: var(--text-light);
-      margin-bottom: var(--space-xs);
-    }
-
-    .faq-highlight {
-      background: var(--color-primary-50);
-      border-left: 4px solid var(--primary);
-      padding: var(--space-md) var(--space-lg);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      margin-top: var(--space-md);
-    }
-
-    .faq-highlight p {
-      margin: 0;
-      color: var(--text);
-      font-size: var(--font-size-sm);
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 50px;
-      height: 50px;
-      background: var(--gradient-primary);
-      color: white;
-      border: none;
-      border-radius: var(--radius-full);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-lg);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(20px);
-      transition: all var(--transition-base);
-      z-index: 1000;
-    }
-
-    .back-to-top.visible {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-
-    .back-to-top:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-xl);
-    }
-
-    @media (max-width: 768px) {
-      .faq-hero h1 {
-        font-size: var(--font-size-2xl);
-      }
-
-      .faq-question {
-        font-size: var(--font-size-base);
-        padding: var(--space-md);
-      }
-
-      .faq-answer-inner {
-        padding: 0 var(--space-md) var(--space-md);
-        padding-left: calc(var(--space-md) + 32px + var(--space-sm));
-      }
-
-      .faq-section-title {
-        font-size: var(--font-size-xl);
-      }
-
-      .back-to-top {
-        bottom: 20px;
-        right: 20px;
-        width: 44px;
-        height: 44px;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-container">
       <a href="./index.html" class="site-logo">
-        <img src="./assets/images/logos/site-logo.svg" alt="ギャランティークリアガイド" class="logo-img">
+        <img src="./assets/images/logos/site-logo.svg" alt="クリアセレクトナビ" class="logo-img">
       </a>
 
       <nav class="site-nav" id="siteNav">
         <a href="./index.html" class="nav-link" data-section="home">ホーム</a>
-        <a href="./index.html#ranking" class="nav-link" data-section="ranking">ランキング</a>
+        <a href="./index.html#ranking" class="nav-link" data-section="ranking">保証会社一覧</a>
         <a href="./index.html#articles" class="nav-link" data-section="articles">記事一覧</a>
         <a href="./glossary.html" class="nav-link">用語集</a>
         <a href="./faq.html" class="nav-link active">FAQ</a>
@@ -409,7 +148,9 @@
     <section class="faq-section" id="zaiseki">
       <h2 class="faq-section-title">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z">
+          </path>
         </svg>
         在籍確認について
       </h2>
@@ -805,7 +546,8 @@
 
   <!-- トップへ戻るボタン -->
   <button class="back-to-top" id="backToTop" aria-label="トップへ戻る">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
