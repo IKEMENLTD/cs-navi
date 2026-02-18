@@ -1,11 +1,11 @@
 # Robots.txt for クリアセレクトナビ
-# https://example.github.io/site-a/
+# https://cs-navi.jp/
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://example.github.io/site-a/sitemap.xml
+Sitemap: https://cs-navi.jp/sitemap.xml
 
 # Crawl-delay (optional, for polite crawling)
 Crawl-delay: 1

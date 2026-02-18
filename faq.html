@@ -4,13 +4,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://example.github.io/site-a/faq.html">
+  <link rel="canonical" href="https://cs-navi.jp/faq.html">
   <meta name="description" content="カードローンに関するよくある質問と回答。審査、在籍確認、返済、金利など、初めての方が気になる疑問を分かりやすく解説します。">
   <meta name="robots" content="index, follow">
 
   <title>よくある質問（FAQ） | クリアセレクトナビ</title>
 
   <link rel="stylesheet" href="./assets/css/neo-style.css">
+
+  <!-- FAQ構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "カードローンとは何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "カードローンとは、専用のカードやアプリを使って、設定された限度額内で何度でもお金を借りられるサービスです。銀行や消費者金融が提供しており、担保や保証人は不要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "カードローンの審査にはどのくらい時間がかかりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "消費者金融は最短18分〜1時間程度、銀行カードローンは最短翌営業日〜1週間程度です。即日融資を希望する場合は消費者金融がおすすめです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "在籍確認なしで借りられるカードローンはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "完全に在籍確認なしのカードローンはありませんが、電話連絡なしで在籍確認できるカードローンはあります。SMBCモビットのWEB完結申込など、条件を満たせば書類のみで確認できます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "カードローンの金利18%は高いですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "カードローンとしては標準的な金利です。消費者金融は年3.0%〜18.0%、銀行カードローンは年1.5%〜14.8%が相場です。初回利用では上限金利が適用されやすいですが、利用実績で金利が下がることがあります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "総量規制とは何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "総量規制とは、年収の3分の1を超える貸付を禁止する貸金業法の規制です。消費者金融やクレジットカードのキャッシングが対象で、銀行カードローンは対象外です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "返済が遅れるとどうなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "遅延損害金（年率20%程度）が発生し、督促連絡が来ます。61日以上の延滞は信用情報に事故情報として登録され、今後の借入やクレジットカード作成が難しくなります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "カードローンは家族にバレずに利用できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、WEB完結申込、郵送物なし、カードレス契約、WEB明細を選択することで家族にバレにくくなります。SMBCモビットやプロミスはこれらに対応しています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "パート・アルバイトでもカードローンを申し込めますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、安定した収入があれば申し込めます。勤続期間が長いほど有利で、6ヶ月以上が目安です。希望額は控えめに設定し、他社借入がない状態で申し込むと審査に通りやすくなります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "10万円借りたら利息はいくらになりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "金利18%で10万円を借りた場合、30日間で約1,479円、6ヶ月で約8,876円、1年間で約10,011円の利息がかかります。早く返済するほど利息は少なくなります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "カードローンとキャッシングの違いは何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "カードローンは借入専用サービスで限度額が高く金利は比較的低めです。キャッシングはクレジットカード付帯のサービスで限度額は低め（10〜50万円程度）、金利は高め（15〜18%）です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ブラックリストに載るとどうなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "新規のカードローン審査やクレジットカード作成、住宅ローン審査が難しくなります。61日以上の長期延滞や債務整理が原因で登録され、5〜10年で記録は消えます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "即日融資を受けるにはどうすればいいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "消費者金融のカードローンに平日午前中に申し込み、必要書類を事前に準備しておくことで当日中に融資を受けやすくなります。WEB申込で来店不要のサービスを選ぶと効率的です。"
+        }
+      }
+    ]
+  }
+  </script>
 
   <link rel="icon" type="image/svg+xml"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
